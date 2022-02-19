@@ -39,4 +39,4 @@ generate `hello.pb.go`
 protoc --go-netrpc_out=plugins=netrpc:$GOPATH/src hello.proto
 ```
 
-## [Example](github.com/feiquan123/protoc-gen-go-netrpc/example)
+## [Example](https://github.com/feiquan123/protoc-gen-go-netrpc/blob/main/example/api/hello.proto)
