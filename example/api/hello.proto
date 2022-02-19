@@ -1,0 +1,17 @@
+/*
+	protoc --go-netrpc_out=plugins=netrpc:$GOPATH/src hello.proto 
+*/
+syntax = "proto3";
+
+package api;
+
+option go_package = "github.com/feiquan123/protoc-gen-go-netrpc/example/api";
+
+message String {
+    string value = 1;
+}
+
+
+service HelloService {
+	rpc Hello(String) returns (String);
+}
